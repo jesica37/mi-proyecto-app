@@ -1,0 +1,19 @@
+.contador {
+display: inline-block;
+padding: 8px;
+margin: 8px;
+}
+
+.btn-contador {
+    display: inline-block;
+    cursor: pointer;
+    gap: 10px;
+    padding: 5px;
+    margin: 8px;
+    border-color: darkgoldenrod;
+}
+
+.n-contador {
+    font-size: 20px;
+    color: black;
+}

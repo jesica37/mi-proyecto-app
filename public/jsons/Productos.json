@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "nombre": "Heladera No Frost 340L",
+    "descripcion": "Heladera con freezer superior, tecnología No Frost, control de temperatura digital y luz LED interior.",
+    "marca": "Whirlpool",
+    "modelo": "WRN340S",
+    "precio": 489999,
+    "stock": 10,
+    "imagen": "heladera.jpeg",
+    "categoria": "cocina",
+    "detalles": {
+      "capacidad": "340 litros",
+      "eficiencia": "A+",
+      "color": "Plata",
+      "consumo": "220V - 50Hz"
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Lavarropas Automático 8kg",
+    "descripcion": "Lavarropas de carga frontal con 15 programas, pantalla LED y sistema EcoWash.",
+    "marca": "Samsung",
+    "modelo": "WF80T4020CE",
+    "precio": 399999,
+    "stock": 8,
+    "imagen": "lavarropas.jpeg",
+    "categoria": "lavado",
+    "detalles": {
+      "capacidad": "8 kg",
+      "eficiencia": "A++",
+      "velocidad_centrifugado": "1200 rpm",
+      "color": "Blanco"
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Microondas 28L Digital",
+    "descripcion": "Microondas con grill, 10 niveles de potencia, función descongelar y temporizador digital.",
+    "marca": "LG",
+    "modelo": "MS2836G",
+    "precio": 189999,
+    "stock": 15,
+    "imagen": "microondas.jpeg",
+    "categoria": "cocina",
+    "detalles": {
+      "capacidad": "28 litros",
+      "potencia": "1000W",
+      "color": "Negro",
+      "tipo": "Con grill"
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Aire Acondicionado Split 3000 Frigorías",
+    "descripcion": "Aire frío/calor con control remoto, filtro antibacteriano y eficiencia energética A+.",
+    "marca": "BGH",
+    "modelo": "BS30W",
+    "precio": 659999,
+    "stock": 6,
+    "imagen": "aire.jpeg",
+    "categoria": "climatizacion",
+    "detalles": {
+      "capacidad": "3000 frigorías",
+      "modo": "Frío/Calor",
+      "eficiencia": "A+",
+      "control_remoto": "Sí"
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Cafetera Express 1.5L",
+    "descripcion": "Cafetera espresso con vaporizador de leche, filtro doble y bomba italiana de 15 bares.",
+    "marca": "Oster",
+    "modelo": "BVSTEM6701",
+    "precio": 249999,
+    "stock": 12,
+    "imagen": "cafetera.jpeg",
+    "categoria": "cocina",
+    "detalles": {
+      "capacidad": "1.5 litros",
+      "presion": "15 bares",
+      "color": "Negro y acero",
+      "tipo": "Espresso"
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Smart TV 50'' 4K UHD",
+    "descripcion": "Smart TV LED 50 pulgadas, resolución 4K UHD, sistema Android TV y conexión WiFi.",
+    "marca": "TCL",
+    "modelo": "50P615",
+    "precio": 759999,
+    "stock": 9,
+    "imagen": "smart.jpeg",
+    "categoria": "entretenimiento",
+    "detalles": {
+      "tamaño": "50 pulgadas",
+      "resolucion": "4K UHD",
+      "sistema_operativo": "Android TV",
+      "conectividad": "WiFi / HDMI / USB"
+    }
+  },
+  {
+    "id": 7,
+    "nombre": "Batidora Planetaria 800W",
+    "descripcion": "Batidora de pie con bowl de acero inoxidable de 5L, 6 velocidades y cabezal abatible.",
+    "marca": "Philips",
+    "modelo": "HR3745",
+    "precio": 159999,
+    "stock": 20,
+    "imagen": "batidora.jpeg",
+    "categoria": "cocina",
+    "detalles": {
+      "potencia": "800W",
+      "capacidad_bowl": "5L",
+      "material": "Acero inoxidable",
+      "velocidades": 6
+    }
+  },
+  {
+    "id": 8,
+    "nombre": "Tostadora Eléctrica 2 Rebanadas",
+    "descripcion": "Tostadora con bandeja desmontable, control de tostado ajustable y función descongelar.",
+    "marca": "Atma",
+    "modelo": "TA8130",
+    "precio": 69999,
+    "stock": 25,
+    "imagen": "tostadora.jpeg",
+    "categoria": "cocina",
+    "detalles": {
+      "capacidad": "2 rebanadas",
+      "potencia": "850W",
+      "funciones": ["Descongelar", "Recalentar", "Cancelar"]
+    }
+  },
+  {
+    "id": 9,
+    "nombre": "Aspiradora Ciclónica 2000W",
+    "descripcion": "Aspiradora sin bolsa con filtro HEPA lavable, depósito transparente y cable retráctil.",
+    "marca": "Liliana",
+    "modelo": "AC2000",
+    "precio": 219999,
+    "stock": 11,
+    "imagen": "aspiradora.jpeg",
+    "categoria": "limpieza",
+    "detalles": {
+      "potencia": "2000W",
+      "filtro": "HEPA lavable",
+      "capacidad": "2 litros",
+      "tipo": "Ciclónica"
+    }
+  },
+  {
+    "id": 10,
+    "nombre": "Licuadora 1.8L Vidrio",
+    "descripcion": "Licuadora con vaso de vidrio resistente, 5 velocidades, función pulso y cuchillas de acero.",
+    "marca": "Peabody",
+    "modelo": "PE-LX185",
+    "precio": 99999,
+    "stock": 18,
+    "imagen": "licuadora.jpeg",
+    "categoria": "cocina",
+    "detalles": {
+      "capacidad": "1.8 litros",
+      "material_vaso": "Vidrio",
+      "velocidades": 5,
+      "funcion_pulso": true
+    }
+  }
+]
+
+

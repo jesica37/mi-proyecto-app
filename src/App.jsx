@@ -2,17 +2,36 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'*/
 import './App.css'
-import NavBar from './components/NavBar'
-import Container from './components/container'
+/*import NavBar from './components/NavBar/NavBar'*/
+import { BrowserRouter, Routes, Route } from "react-router";
+import Productos from './assets/pages/Productos'
+import ProductoDetail from './assets/pages/ProductoDetail'
+import CartDetail from './assets/pages/CartDetail'
+import Contacto from './assets/pages/Contacto';
+import NotFound from './assets/pages/NotFound';
+
 function App() {
   /*const [count, setCount] = useState(0)*/
   return (
-    <>
-      <NavBar />
-      <Container saludo="Bienvenido, en el siguiente catalogo podras ver nuestros productos" />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<NotFound/>} />
+         <Route path="/" element={<Productos/>} />
+          <Route path="/Producto-Detail/:productoId" element={<ProductoDetail/>} />
+          <Route path="/Cart-Detail/:productoId" element={<CartDetail/>} />
+          <Route path="/Contacto" element={<Contacto/>} />
+      </Routes>
+    </BrowserRouter>
+
   )
 }
+export default App
+
+/*
+<NavBar />
+        <Container saludo="Bienvenido, en el siguiente catalogo podras ver nuestros productos" />
+
+
 /* return (
    <>
      <div>
@@ -39,4 +58,5 @@ function App() {
  )*/
 
 
-export default App
+
+/* <Route path="/" element={<NavBar />} />*/
