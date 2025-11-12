@@ -20,7 +20,7 @@ function ItemDetail({ producto }) {
         <div className='card'>
             <h3>{producto.nombre}</h3>
             <p>{producto.descripcion}</p>
-            <img></img>
+            <img className='img-producto' src={`/${producto.imagen}`}></img>
             <ItemCount stock={producto.stock} />
             <span> $ {producto.precio}</span>
             <div className='btn-primary'>

@@ -1,8 +1,8 @@
 
 function Contacto() {
-    
     return (
-        <div>Contacto</div>
-    )
+        <di>Contacto</di>
+    );
 }
-export default Contacto
+
+export default Contacto;

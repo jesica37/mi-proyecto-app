@@ -1,20 +1,20 @@
 .nav {
-display: flex;
-background-color: rgba(228, 153, 14, 0.836);
-padding: 8px;
+  display: flex;
+  background-color: rgba(228, 153, 14, 0.836);
+  padding: 8px;
 
 }
 
 .barra {
-display: flex;
-align-items: center;
-list-style: none;
-justify-content: center;
-padding: 10px;
-margin: 10px 60px;
-text-decoration: none;
-gap: 30px;
-   flex-wrap: wrap ;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 60px;
+  text-decoration: none;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .mi-logo {
@@ -26,10 +26,10 @@ gap: 30px;
 
 .menu {
   list-style: none;
-   margin: 24px 60px;
-   text-decoration: none;
-   gap: 30px;
-   flex-wrap: wrap ;
-   font-size: 20px;
-   font-family: "Work Sans", sans-serif;
+  margin: 24px 60px;
+  text-decoration: none;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
 }

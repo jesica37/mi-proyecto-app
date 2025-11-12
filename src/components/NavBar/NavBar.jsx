@@ -11,7 +11,7 @@ function NavBar() {
                 <li className='menu'>Categorias</li>
             </ul>
             <div>
-                <img className='mi-logo'   src="logo.png" clas="logo"></img>
+                <img className='mi-logo' src="logo.png" clas="logo"></img>
             </div>
             <ul className='barra'>
                 <li className='menu'><NavLink to="/contacto">Contacto</NavLink></li>

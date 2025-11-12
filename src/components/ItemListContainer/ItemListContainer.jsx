@@ -3,10 +3,10 @@ import './ItemListContainer.css'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useEffect, useState } from 'react'
 
-function ItemListContainer() {
+function ItemListContainer({ categoriaSeleccionada }) {
 
-    const [productos,setProductos] = useState([])
-    
+    const [productos, setProductos] = useState([])
+    const [productosFiltrados, setProductosFiltrados] = useState([])
 
     useEffect(() => {
         (async () => {
@@ -14,25 +14,26 @@ function ItemListContainer() {
                 const response = await fetch("/jsons/Productos.json")
                 const data = await response.json()
                 setProductos(data)
+                setProductosFiltrados(data)
             } catch (error) {
                 console.log(error)
             }
         })()
     }, [])
-/*
+
     useEffect(() => {
-       const filtrados = Productos.filter(producto => producto.categoria === categoriaElegida)
-       setProductos(filtrados)
-    }, [categoriaElegida])*/
+        const filtrados = productos.filter(producto => producto.categoria === categoriaSeleccionada)
+        setProductosFiltrados(filtrados)
+    }, [categoriaSeleccionada])
 
 
     return (
-    
+
         <div className='container'>
-           {
-            productos.map((producto) =>{
-                return <ItemDetail key={producto.id} producto={producto}/>
-             })
+            {
+                productosFiltrados.map((producto) => {
+                    return <ItemDetail key={producto.id} producto={producto} />
+                })
             }
         </div>
     )

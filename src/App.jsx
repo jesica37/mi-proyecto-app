@@ -15,11 +15,11 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<NotFound/>} />
-         <Route path="/" element={<Productos/>} />
-          <Route path="/Producto-Detail/:productoId" element={<ProductoDetail/>} />
-          <Route path="/Cart-Detail/:productoId" element={<CartDetail/>} />
-          <Route path="/Contacto" element={<Contacto/>} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Productos />} />
+        <Route path="/Producto-Detail/:productoId" element={<ProductoDetail />} />
+        <Route path="/Cart-Detail/:productoId" element={<CartDetail />} />
+        <Route path="/Contacto" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
 
