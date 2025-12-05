@@ -31,6 +31,20 @@ h3 {
     font-family: "Work Sans", sans-serif;
 }
 
+.info-cart{
+    color: black;
+    font-size: 15px;
+    margin: 20px 30px;
+}
+
+h2 {
+    font-family: "Work Sans", sans-serif;
+    background-color: azure;
+    color: black;
+    margin: 20px;
+}
+
+
 h5 {
     font-size: 15px;
 }
@@ -43,4 +57,15 @@ h5 {
     width: 250px;
     height: 230px;
 
+}
+
+.dark { 
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.light {
+    color: black;
+    
 }

@@ -1,6 +1,7 @@
+
 [
   {
-    "id": 1,
+   "id": 1,
     "nombre": "Heladera No Frost 340L",
     "descripcion": "Heladera con freezer superior, tecnología No Frost, control de temperatura digital y luz LED interior.",
     "marca": "Whirlpool",
@@ -169,5 +170,6 @@
     }
   }
 ]
+  
 
 

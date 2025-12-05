@@ -1,15 +1,18 @@
-import useCount from '../../hooks/useCount'
+
 import './ItemCount.css'
-import { useState } from 'react'
+import { useState, useContext} from 'react'
+import { ThemeContext } from "../../context/ThemeContent"
+import '../../assets/pages/Productos/Productos.css'
 
-function ItemCount({ stock }) {
 
-    const { count, restar, sumar } = useCount({ inicial: 1, stock })
+function ItemCount({ count, restar, sumar }) {
+const {dark} = useContext(ThemeContext)
+    
     return (
 
         <div className='contador'>
             <button onClick={restar} className='btn-contador'>-</button>
-            <span className='n-contador'>{count}</span>
+            <span className={`n-contador ${dark ? "dark" : "light"}`}>{count}</span>
             <button onClick={sumar} className='btn-contador'>+</button>
         </div>
     )

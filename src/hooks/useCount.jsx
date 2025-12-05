@@ -15,9 +15,11 @@ function useCount({ inicial = 1, stock }) {
         }
     }
     return {
+        
         count,
         restar,
         sumar
+        
     }
 }
 export default useCount

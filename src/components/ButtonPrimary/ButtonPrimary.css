@@ -7,3 +7,47 @@
     border-radius: 5px;
     border-color: darkgoldenrod;
 }
+
+.btn-primary-cart .btn-primary {
+    display: flex;
+    cursor: pointer;
+    color: rgb(241, 3, 3);
+    gap: 15px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: rgb(21, 20, 20);
+}
+
+.login{
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgb(231, 204, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-datos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.login-type{
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-login{
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    background-color: bisque;
+    margin: 10px;
+}
