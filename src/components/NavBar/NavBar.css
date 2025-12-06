@@ -20,12 +20,12 @@
   width: 100px;
   height: 100px;
   display: block;
-  margin: 10px 80px ;
-  
+  margin: 10px 80px;
+
 }
 
 .menu {
- color: rgb(30, 26, 26);
+  color: rgb(30, 26, 26);
   margin: 10px;
   text-decoration: none;
   gap: 20px;
@@ -34,6 +34,16 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.icono{
+.icono {
   margin: 10px 80px;
+}
+
+.btn-salir {
+  display: flex;
+  cursor: pointer;
+  gap: 15px;
+  padding: 4px;
+  margin: 50px 10px 50px 20px;
+  border-radius: 5px;
+  border-color: darkgoldenrod;
 }

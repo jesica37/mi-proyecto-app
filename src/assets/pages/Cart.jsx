@@ -7,6 +7,8 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore/lite'
 import { app } from '../../FirebaseCon'
 import { ThemeContext } from "../../context/ThemeContent"
 import '../pages/Productos/Productos.css'
+import { UserContext } from '../../context/userContext'
+import { useNavigate } from 'react-router'
 
 
 function Cart() {
@@ -14,7 +16,15 @@ function Cart() {
     const { dark } = useContext(ThemeContext);
     const { cart, eliminarCartProducto, vaciarCartProducto, total } = useContext(CartContext);
     const [productos, setProductos] = useState([]);
+    const { user } = useContext(UserContext)
+    const navigate = useNavigate()
 
+    useEffect(() => {
+        console.log(user)
+        if (!user.token) {
+            navigate("/login")
+        }
+    })
     useEffect(() => {
         (async () => {
             try {

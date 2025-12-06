@@ -1,20 +1,26 @@
 
 import '../../components/ButtonPrimary/ButtonPrimary.css'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router';
+import { UserContext } from '../../context/userContext';
 
 export default function login() {
     const auth = getAuth();
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const navigate = useNavigate()
+    const {guardarUsuario} = useContext(UserContext)
+
     const logearse = () => {
 
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
 
                 const user = userCredential.user;
-
+                guardarUsuario(user.accessToken, user.email)
+                navigate("/")
             })
             .catch((error) => {
                 const errorCode = error.code;

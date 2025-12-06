@@ -8,6 +8,7 @@ import { CartContext } from "../../context/CartContext"
 import { ThemeContext } from "../../context/ThemeContent"
 import '../pages/Productos/Productos.css'
 import Loading from "../../components/Loading/Loading";
+import { UserContext } from "../../context/userContext";
 
 function ProductoDetail() {
 
@@ -25,6 +26,14 @@ function ProductoDetail() {
 
   const [count, setCount] = useState(1);
 
+  const { user } = useContext(UserContext)
+
+  useEffect(() => {
+    console.log(user)
+    if (!user.token) {
+      navigate("/login")
+    }
+  })
   const veraddCartProducto = () => {
     const newCartProducto = {
       id: producto.id,
@@ -32,7 +41,6 @@ function ProductoDetail() {
     };
 
     addCartProducto(newCartProducto);
-    navigate(`/Cart/${producto.id}`);
   };
 
   useEffect(() => {
@@ -78,7 +86,7 @@ function ProductoDetail() {
       <div className="btn-primary">
         <ButtonPrimary onClick={veraddCartProducto}>
           <ShoppingBasket />
-          carrito
+          añadir
         </ButtonPrimary>
       </div>
     </div>

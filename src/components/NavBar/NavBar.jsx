@@ -3,7 +3,8 @@ import CartWidget from '../CartWidget/CartWidget'
 import './NavBar.css'
 import ButtonTheme from '../ButtonTheme/ButtonTheme'
 import { getAuth, signOut } from "firebase/auth";
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { UserContext } from '../../context/userContext';
 
 
 
@@ -11,9 +12,11 @@ function NavBar() {
 
     const auth = getAuth();
     const navigate = useNavigate()
+    const {cerrarSesion} = useContext(UserContext)
 
-    const logearse = () => {
+    const salir = () => {
         signOut(auth).then(() => {
+            cerrarSesion()
             navigate('/login')
         }).catch((error) => {
 
@@ -35,6 +38,7 @@ function NavBar() {
             </div>
             <CartWidget />
             <ButtonTheme />
+            <button onClick={salir} className='btn-salir'>Salir</button>
         </nav>
 
     )
