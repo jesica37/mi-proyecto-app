@@ -5,6 +5,7 @@ import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router';
 import { UserContext } from '../../context/userContext';
 
+
 export default function login() {
     const auth = getAuth();
 
@@ -12,6 +13,7 @@ export default function login() {
     const [password, setPassword] = useState("")
     const navigate = useNavigate()
     const {guardarUsuario} = useContext(UserContext)
+    
 
     const logearse = () => {
 
@@ -28,13 +30,22 @@ export default function login() {
             });
     }
 
+    const registro = () => {
+        navigate('/registro')            
+    }
+
     return (
         <div className="login">
             <div className='login-datos'>
                 <input value={email} onChange={(e) => setEmail(e.target.value)} className="login-type" type="text" placeholder="Ingrese usuario" />
                 <input value={password} onChange={(e) => setPassword(e.target.value)} className="login-type" type="password" placeholder="Ingrese contraseña" />
                 <button onClick={logearse} className='btn-login'>Ingresar</button>
+                <button onClick={registro} className='btn-login'>Ir a registro</button>
             </div>
+            <div>
+                
+            </div>
+
         </div>
     )
 }
